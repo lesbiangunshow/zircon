@@ -5,6 +5,7 @@ import org.hexworks.zircon.api.builder.Builder
 import org.hexworks.zircon.api.data.Position
 import org.hexworks.zircon.api.data.Size
 import org.hexworks.zircon.api.data.Tile
+import org.hexworks.zircon.api.dsl.graphics.ZirconDsl
 import org.hexworks.zircon.api.graphics.StyleSet
 import org.hexworks.zircon.api.graphics.TileGraphics
 import org.hexworks.zircon.api.resource.TilesetResource
@@ -19,7 +20,9 @@ import kotlin.jvm.JvmStatic
  * - Default [Size] is `ONE` (1x1).
  * - Default `filler` is an `EMPTY` character
  */
+
 @Suppress("ArrayInDataClass")
+@ZirconDsl
 data class TileGraphicsBuilder(
     private var tileset: TilesetResource = RuntimeConfig.config.defaultTileset,
     private var size: Size = Size.one(),

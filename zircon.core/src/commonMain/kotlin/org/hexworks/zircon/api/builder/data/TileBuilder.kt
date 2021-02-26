@@ -6,6 +6,7 @@ import org.hexworks.zircon.api.data.CharacterTile
 import org.hexworks.zircon.api.data.GraphicalTile
 import org.hexworks.zircon.api.data.ImageTile
 import org.hexworks.zircon.api.data.Tile
+import org.hexworks.zircon.api.dsl.graphics.ZirconDsl
 import org.hexworks.zircon.api.graphics.StyleSet
 import org.hexworks.zircon.api.modifier.Modifier
 import org.hexworks.zircon.api.resource.TilesetResource
@@ -23,6 +24,7 @@ import org.hexworks.zircon.internal.data.DefaultImageTile
  * @see [org.hexworks.zircon.api.color.TileColor] to check default colors.
  */
 @Suppress("UNCHECKED_CAST")
+@ZirconDsl
 data class TileBuilder(
     private var character: Char = ' ',
     private var name: String = " ",
