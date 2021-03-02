@@ -4,6 +4,7 @@ import org.hexworks.zircon.api.application.*
 import org.hexworks.zircon.api.builder.Builder
 import org.hexworks.zircon.api.color.TileColor
 import org.hexworks.zircon.api.data.Size
+import org.hexworks.zircon.api.dsl.graphics.ZirconDsl
 import org.hexworks.zircon.api.resource.TilesetResource
 import org.hexworks.zircon.internal.config.RuntimeConfig
 import kotlin.jvm.JvmOverloads
@@ -14,6 +15,7 @@ import kotlin.jvm.JvmStatic
  * has sensible default values so
  * @see AppConfig for all the default values.
  */
+@ZirconDsl
 data class AppConfigBuilder(
     private var config: AppConfig = AppConfig.defaultConfiguration()
 ) : Builder<AppConfig> {

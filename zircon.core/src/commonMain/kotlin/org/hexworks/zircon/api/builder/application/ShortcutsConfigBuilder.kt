@@ -2,6 +2,7 @@ package org.hexworks.zircon.api.builder.application
 
 import org.hexworks.zircon.api.application.ShortcutsConfig
 import org.hexworks.zircon.api.builder.Builder
+import org.hexworks.zircon.api.dsl.graphics.ZirconDsl
 import org.hexworks.zircon.api.uievent.KeyboardEventMatcher
 import kotlin.jvm.JvmStatic
 
@@ -9,6 +10,7 @@ import kotlin.jvm.JvmStatic
  * [Builder] for creating [ShortcutsConfig]s.
  */
 @Suppress("KDocUnresolvedReference")
+@ZirconDsl
 data class ShortcutsConfigBuilder(
     private var shortcutsConfig: ShortcutsConfig = ShortcutsConfig.defaultConfig()
 ) : Builder<ShortcutsConfig> {

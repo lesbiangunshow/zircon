@@ -2,12 +2,14 @@ package org.hexworks.zircon.api.builder.application
 
 import org.hexworks.zircon.api.application.DebugConfig
 import org.hexworks.zircon.api.builder.Builder
+import org.hexworks.zircon.api.dsl.graphics.ZirconDsl
 import kotlin.jvm.JvmStatic
 
 /**
  * Builder for [DebugConfig]s.
  * @see DebugConfig for defaults
  */
+@ZirconDsl
 data class DebugConfigBuilder(
     var debugConfig: DebugConfig = DebugConfig.defaultConfig()
 ) : Builder<DebugConfig> {

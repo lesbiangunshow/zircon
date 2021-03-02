@@ -10,15 +10,11 @@ annotation class ZirconDsl
 
 @ZirconDsl
 fun tileGraphics(init: TileGraphicsBuilder.() -> Unit): TileGraphics =
-    TileGraphicsBuilder().apply {
-        init()
-    }.build()
+    TileGraphicsBuilder().apply(init).build()
 
 @ZirconDsl
 fun tile(init: TileBuilder.() -> Unit): Tile =
-    TileBuilder().apply {
-        init()
-    }.build()
+    TileBuilder().apply(init).build()
 
 @ZirconDsl
 fun TileGraphicsBuilder.filler(tile: () -> Tile) {

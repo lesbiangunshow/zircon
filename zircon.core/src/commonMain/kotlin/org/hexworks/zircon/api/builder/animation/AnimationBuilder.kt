@@ -5,12 +5,14 @@ import org.hexworks.zircon.api.animation.Animation
 import org.hexworks.zircon.api.animation.AnimationFrame
 import org.hexworks.zircon.api.builder.Builder
 import org.hexworks.zircon.api.data.Position
+import org.hexworks.zircon.api.dsl.graphics.ZirconDsl
 import org.hexworks.zircon.internal.animation.InternalAnimationFrame
 import org.hexworks.zircon.internal.animation.impl.DefaultAnimation
 import org.hexworks.zircon.internal.animation.impl.DefaultAnimationFrame
 
 @Beta
 @Suppress("DataClassPrivateConstructor", "UNCHECKED_CAST", "RUNTIME_ANNOTATION_NOT_SUPPORTED")
+@ZirconDsl
 data class AnimationBuilder private constructor(
     private val frames: MutableList<InternalAnimationFrame> = mutableListOf(),
     private val positions: MutableList<Position> = mutableListOf(),
