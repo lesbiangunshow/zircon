@@ -5,7 +5,7 @@ import org.hexworks.zircon.api.component.Icon
 import org.hexworks.zircon.api.component.builder.base.BaseComponentBuilder
 import org.hexworks.zircon.api.data.Size
 import org.hexworks.zircon.api.data.Tile
-import org.hexworks.zircon.api.dsl.graphics.ZirconDsl
+import org.hexworks.zircon.internal.dsl.ZirconDsl
 import org.hexworks.zircon.internal.component.impl.DefaultIcon
 import org.hexworks.zircon.internal.component.renderer.DefaultIconRenderer
 import org.hexworks.zircon.internal.config.RuntimeConfig

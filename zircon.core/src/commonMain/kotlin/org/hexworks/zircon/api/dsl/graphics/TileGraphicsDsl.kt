@@ -3,10 +3,8 @@ package org.hexworks.zircon.api.dsl.graphics
 import org.hexworks.zircon.api.builder.data.TileBuilder
 import org.hexworks.zircon.api.builder.graphics.TileGraphicsBuilder
 import org.hexworks.zircon.api.data.Tile
+import org.hexworks.zircon.internal.dsl.ZirconDsl
 import org.hexworks.zircon.api.graphics.TileGraphics
-
-@DslMarker
-annotation class ZirconDsl
 
 @ZirconDsl
 fun tileGraphics(init: TileGraphicsBuilder.() -> Unit): TileGraphics =

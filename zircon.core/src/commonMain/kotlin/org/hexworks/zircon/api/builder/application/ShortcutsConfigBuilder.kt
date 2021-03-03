@@ -2,7 +2,7 @@ package org.hexworks.zircon.api.builder.application
 
 import org.hexworks.zircon.api.application.ShortcutsConfig
 import org.hexworks.zircon.api.builder.Builder
-import org.hexworks.zircon.api.dsl.graphics.ZirconDsl
+import org.hexworks.zircon.internal.dsl.ZirconDsl
 import org.hexworks.zircon.api.uievent.KeyboardEventMatcher
 import kotlin.jvm.JvmStatic
 

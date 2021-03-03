@@ -4,7 +4,7 @@ import org.hexworks.zircon.api.application.*
 import org.hexworks.zircon.api.builder.Builder
 import org.hexworks.zircon.api.color.TileColor
 import org.hexworks.zircon.api.data.Size
-import org.hexworks.zircon.api.dsl.graphics.ZirconDsl
+import org.hexworks.zircon.internal.dsl.ZirconDsl
 import org.hexworks.zircon.api.resource.TilesetResource
 import org.hexworks.zircon.internal.config.RuntimeConfig
 import kotlin.jvm.JvmOverloads

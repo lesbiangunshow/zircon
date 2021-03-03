@@ -4,7 +4,7 @@ import org.hexworks.zircon.api.builder.Builder
 import org.hexworks.zircon.api.component.ColorTheme
 import org.hexworks.zircon.api.component.Component
 import org.hexworks.zircon.api.component.Group
-import org.hexworks.zircon.api.dsl.graphics.ZirconDsl
+import org.hexworks.zircon.internal.dsl.ZirconDsl
 import org.hexworks.zircon.api.resource.TilesetResource
 import org.hexworks.zircon.internal.component.impl.DefaultGroup
 import org.hexworks.zircon.internal.config.RuntimeConfig
