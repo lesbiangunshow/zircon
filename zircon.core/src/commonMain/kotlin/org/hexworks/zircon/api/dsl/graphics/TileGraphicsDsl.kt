@@ -38,7 +38,6 @@ fun makinTileGraphics() {
                     withCharacter('~')
                 }
             }
-            build()
         }
 }
 

@@ -7,6 +7,7 @@ import org.hexworks.zircon.api.data.Block
 import org.hexworks.zircon.api.data.BlockTileType
 import org.hexworks.zircon.api.data.BlockTileType.*
 import org.hexworks.zircon.api.data.Tile
+import org.hexworks.zircon.api.dsl.graphics.ZirconDsl
 import org.hexworks.zircon.internal.data.DefaultBlock
 
 /**
@@ -15,6 +16,7 @@ import org.hexworks.zircon.internal.data.DefaultBlock
  * Setting an [emptyTile] is **mandatory** and has no default.
  */
 @Suppress("UNCHECKED_CAST", "MemberVisibilityCanBePrivate")
+@ZirconDsl
 data class BlockBuilder<T : Tile>(
     private var emptyTile: Maybe<T> = Maybe.empty(),
     private val tiles: MutableMap<BlockTileType, T> = mutableMapOf()

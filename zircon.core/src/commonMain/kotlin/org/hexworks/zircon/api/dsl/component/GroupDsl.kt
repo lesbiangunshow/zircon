@@ -7,4 +7,6 @@ import org.hexworks.zircon.api.component.Group
 fun <T: Component> group(init: GroupBuilder<T>.() -> Unit): Group<T> =
     GroupBuilder<T>().apply(init).build()
 
-//TODO: consider if group dsl should be moved here/created elsewhere
+fun <T: Component> GroupBuilder<T>.component(init: () -> T) {
+    // withComponent for GroupBuilder?
+}
