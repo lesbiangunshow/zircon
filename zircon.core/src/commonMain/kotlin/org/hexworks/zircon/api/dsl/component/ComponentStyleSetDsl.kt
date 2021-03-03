@@ -5,5 +5,3 @@ import org.hexworks.zircon.api.component.ComponentStyleSet
 
 fun componentStyleSet(init: ComponentStyleSetBuilder.() -> Unit): ComponentStyleSet =
     ComponentStyleSetBuilder().apply(init).build()
-
-//TODO: other stylesets as dsl functions here

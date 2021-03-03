@@ -4,9 +4,5 @@ import org.hexworks.zircon.api.builder.component.GroupBuilder
 import org.hexworks.zircon.api.component.Component
 import org.hexworks.zircon.api.component.Group
 
-fun <T: Component> group(init: GroupBuilder<T>.() -> Unit): Group<T> =
+fun <T : Component> group(init: GroupBuilder<T>.() -> Unit): Group<T> =
     GroupBuilder<T>().apply(init).build()
-
-fun <T: Component> GroupBuilder<T>.component(init: () -> T) {
-    // withComponent for GroupBuilder?
-}

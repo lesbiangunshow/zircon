@@ -27,7 +27,7 @@ fun makinTileGraphics() {
 
     TileGraphicsBuilder().apply {
         TileBuilder.apply {
-            withSize(5,5)
+            withSize(5, 5)
         }
     }
     val image =
